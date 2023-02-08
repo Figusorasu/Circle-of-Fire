@@ -5,11 +5,12 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed;
     public GameMaster gm;
 
+    public float speed;
     private float inputHorizontal, inputVertical;
     private Rigidbody2D rb;
+    public Animator anim;
     
 
     void Start() {
@@ -17,7 +18,36 @@ public class PlayerMovement : MonoBehaviour
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
-    void FixedUpdate() {
+    private void Update() {
+        if (rb.velocity.x >= 0) {
+            anim.SetBool("WalkRight", true);
+            anim.SetBool("WalkLeft", false);
+            anim.SetBool("WalkUp", false);
+            anim.SetBool("WalkDown", false);
+        } else if (rb.velocity.x <= 0) {
+            anim.SetBool("WalkRight", false);
+            anim.SetBool("WalkLeft", true);
+            anim.SetBool("WalkUp", false);
+            anim.SetBool("WalkDown", false);
+        } else if (rb.velocity.y >= 0) {
+            anim.SetBool("WalkRight", false);
+            anim.SetBool("WalkLeft", false);
+            anim.SetBool("WalkUp", true);
+            anim.SetBool("WalkDown", false);
+        } else if (rb.velocity.y <= -0) {
+            anim.SetBool("WalkRight", false);
+            anim.SetBool("WalkLeft", false);
+            anim.SetBool("WalkUp", false);
+            anim.SetBool("WalkDown", true);
+        } else {
+            anim.SetBool("WalkRight", false);
+            anim.SetBool("WalkLeft", false);
+            anim.SetBool("WalkUp", false);
+            anim.SetBool("WalkDown", false);
+        }
+    }
+
+    private void FixedUpdate() {
         rb.velocity = new Vector2(inputHorizontal * speed, inputVertical * speed);
     }
 
