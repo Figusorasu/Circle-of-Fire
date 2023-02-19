@@ -19,7 +19,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Update() {
-        
+        anim.SetFloat("moveX", inputHorizontal);
+        anim.SetFloat("moveY", inputVertical);
     }
 
     private void FixedUpdate() {
@@ -29,5 +30,7 @@ public class PlayerMovement : MonoBehaviour
     public void Move(InputAction.CallbackContext ctx) {
         inputHorizontal = ctx.ReadValue<Vector2>().x;
         inputVertical = ctx.ReadValue<Vector2>().y;
+        Debug.Log("X: " + inputHorizontal);
+        Debug.Log("Y: " + inputVertical);
     }
 }

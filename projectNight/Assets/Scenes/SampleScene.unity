@@ -418,6 +418,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1056534941}
   - component: {fileID: 1056534940}
+  - component: {fileID: 1056534942}
   m_Layer: 0
   m_Name: Overworld_30
   m_TagString: Untagged
@@ -492,6 +493,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1056534942
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1056534939}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.00000011920929}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.6372836}
+  m_EdgeRadius: 0
 --- !u!1 &1312515675
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,6 +600,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1619648955}
   - component: {fileID: 1619648954}
+  - component: {fileID: 1619648956}
   m_Layer: 0
   m_Name: Overworld_33
   m_TagString: Untagged
@@ -647,6 +675,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1619648956
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619648953}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.0060201883}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.6026683}
+  m_EdgeRadius: 0
 --- !u!1 &1675594887
 GameObject:
   m_ObjectHideFlags: 0
@@ -657,6 +711,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1675594889}
   - component: {fileID: 1675594888}
+  - component: {fileID: 1675594890}
   m_Layer: 0
   m_Name: Overworld_31
   m_TagString: Untagged
@@ -731,6 +786,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1675594890
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675594887}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.63801}
+  m_EdgeRadius: 0
 --- !u!4 &1945710949 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6548290746100077719, guid: d7fa303be922284459ca846f986a7454, type: 3}
@@ -746,6 +827,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1974562252}
   - component: {fileID: 1974562251}
+  - component: {fileID: 1974562253}
   m_Layer: 0
   m_Name: Overworld_32
   m_TagString: Untagged
@@ -820,6 +902,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1974562253
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974562250}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 2}
+    newSize: {x: 1, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.590628}
+  m_EdgeRadius: 0
 --- !u!1001 &6548290746325984754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -827,9 +935,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 131881452336175994, guid: d7fa303be922284459ca846f986a7454, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4444903659909373351, guid: d7fa303be922284459ca846f986a7454, type: 3}
+      propertyPath: m_Name
+      value: Animations
+      objectReference: {fileID: 0}
     - target: {fileID: 6548290746100077713, guid: d7fa303be922284459ca846f986a7454, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6548290746100077716, guid: d7fa303be922284459ca846f986a7454, type: 3}
+      propertyPath: m_Constraints
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6548290746100077719, guid: d7fa303be922284459ca846f986a7454, type: 3}
       propertyPath: m_RootOrder
