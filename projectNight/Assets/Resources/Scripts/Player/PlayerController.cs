@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
     private GameMaster gm;
-
     [SerializeField] private float speed;
     [SerializeField] private Animator anim;
 
+    [Header("Player Stats")]
+    public int maxHealth;
+    public int maxStamina;
+    [HideInInspector] public int currentHealth;
+    [HideInInspector] public int currentStamina;
+
+
+    // Movement
     private float inputHorizontal, inputVertical;
     private Rigidbody2D rb;
     private Vector3 change;
