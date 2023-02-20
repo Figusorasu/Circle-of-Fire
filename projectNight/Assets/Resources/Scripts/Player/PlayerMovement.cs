@@ -8,19 +8,29 @@ public class PlayerMovement : MonoBehaviour
     private GameMaster gm;
 
     [SerializeField] private float speed;
+    [SerializeField] private Animator anim;
+
     private float inputHorizontal, inputVertical;
     private Rigidbody2D rb;
-    [SerializeField] private Animator anim;
+    private Vector3 change;
     
-
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     private void Update() {
-        anim.SetFloat("moveX", inputHorizontal);
-        anim.SetFloat("moveY", inputVertical);
+        change = Vector3.zero;
+        change.x = inputHorizontal;
+        change.y = inputVertical;
+        if(change != Vector3.zero) {
+            anim.SetFloat("moveX", inputHorizontal);
+            anim.SetFloat("moveY", inputVertical);
+            anim.SetBool("isMoving", true);
+        } else {
+            anim.SetBool("isMoving", false);
+        }
+        
     }
 
     private void FixedUpdate() {
