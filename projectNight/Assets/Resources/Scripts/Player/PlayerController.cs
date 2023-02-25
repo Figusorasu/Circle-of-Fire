@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         } else {
             anim.SetBool("isMoving", false);
         }
-
+        
         if(inputVertical > 0) {
             trail.sortingOrder = 1;
         } else {
