@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour
     
     private GameMaster gm;
     private Rigidbody2D rb;
-    
+
     void Start() {
         rb = GetComponent<Rigidbody2D>();
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour
         } else {
             anim.SetBool("isMoving", false);
         }
-        
+
         if(inputVertical > 0) {
             trail.sortingOrder = 1;
         } else {

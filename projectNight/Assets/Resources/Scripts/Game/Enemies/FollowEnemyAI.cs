@@ -18,10 +18,12 @@ public class FollowEnemyAI : MonoBehaviour
             //Attack Code
             StartCoroutine(Attack());
         }
+
+        Debug.DrawLine(transform.position, target.position);
     }
 
     private IEnumerator Attack() {
-        Debug.Log("Attack!");
+        //Debug.Log("Attack!");
         yield return new WaitForSeconds(1);
     }
 

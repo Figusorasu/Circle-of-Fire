@@ -31,7 +31,7 @@ public class ShootingEnemyAI : MonoBehaviour
     }
 
     private IEnumerator Attack() {
-        Debug.Log("Attack!");
+        //Debug.Log("Attack!");
         yield return new WaitForSeconds(1);
     }
 }

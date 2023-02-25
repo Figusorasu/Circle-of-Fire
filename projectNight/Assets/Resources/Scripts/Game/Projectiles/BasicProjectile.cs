@@ -15,7 +15,7 @@ public class BasicProjectile : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
 
         if(transform.position == targetPosition) {
-            Debug.Log("PifPaf");
+            //Debug.Log("PifPaf");
             Destroy(gameObject);
         }
     }
