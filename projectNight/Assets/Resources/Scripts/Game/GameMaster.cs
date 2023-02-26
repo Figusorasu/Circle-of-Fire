@@ -14,6 +14,17 @@ public class GameMaster : MonoBehaviour
         }
     }
 
+    [Header("Player Stats")]
+    public int PLAYER_MaxHealth;
+
+
+    public class Player : MonoBehaviour
+    {
+
+    }
+
+
+
 
      
 }

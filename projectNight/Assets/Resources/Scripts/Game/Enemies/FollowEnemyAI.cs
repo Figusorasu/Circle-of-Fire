@@ -16,15 +16,14 @@ public class FollowEnemyAI : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
         } else {
             //Attack Code
-            StartCoroutine(Attack());
+            Attack();
         }
 
-        Debug.DrawLine(transform.position, target.position);
+        //DrawLine(transform.position, target.position);
     }
 
-    private IEnumerator Attack() {
-        //Debug.Log("Attack!");
-        yield return new WaitForSeconds(1);
+    private void Attack() {
+        Debug.Log("Attack!");
     }
 
 }

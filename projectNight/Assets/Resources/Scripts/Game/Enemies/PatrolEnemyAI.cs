@@ -25,7 +25,7 @@ public class PatrolEnemyAI : MonoBehaviour
     }
 
     private IEnumerator Wait() {
-        Debug.Log("dupa");
+        //Debug.Log("dupa");
         isWaiting = true;
         yield return new WaitForSeconds(waitTime);
         if(currentPointIndex + 1 < patrolPoints.Length) {
