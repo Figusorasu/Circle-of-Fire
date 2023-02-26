@@ -14,33 +14,14 @@ public class PatrolEnemyAI : MonoBehaviour
 
 
     private void Update() {
-        Debug.Log("Current point index: " + currentPointIndex);
-        Debug.Log("Next patrol point pos:" + patrolPoints[currentPointIndex].position);
-        Debug.Log("Enemy pos:" + transform.position);
-
         if(ReachedPatrolPoint()) {
-            Debug.Log("Woooo cipaaaa");
             if(isWaiting == false) {
-                Debug.Log("działaj dupo");
                 StartCoroutine(Wait());
             }
         } else {
             isWaiting = false;
             transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
         }
-        /*
-        if(transform.position != patrolPoints[currentPointIndex].position) { // If not reached the next patrol point
-            isWaiting = false;
-            transform.position = Vector2.MoveTowards(transform.position, patrolPoints[currentPointIndex].position, speed * Time.deltaTime);
-
-        } else { // when reach the patrol point
-            Debug.Log("Woooo cipaaaa");
-            if(isWaiting == false) {
-                Debug.Log("działaj dupo");
-                StartCoroutine(Wait());
-            }
-        }*/
-
     }
 
     private IEnumerator Wait() {
